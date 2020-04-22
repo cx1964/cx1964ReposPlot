@@ -51,7 +51,7 @@ plt.xlabel('X-as')
 plt.legend()
 plt.show()
 
-# Voorbeeld4: 2 grafieken in 2 afbeelding (met subplot)
+# Voorbeeld4: 2 grafieken in 4 afbeelding (met subplot)
 # https://www.tutorialspoint.com/matplotlib/matplotlib_subplots_function.htm
 #import matplotlib.pyplot as plt
 
