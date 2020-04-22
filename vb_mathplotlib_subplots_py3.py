@@ -3,6 +3,8 @@
 # Documentatie: https://pythonprogramming.net/matplotlib-python-3-basics-tutorial/
 # Opmerking: indien mathplotlib nog niet geinstalleerd is run:
 #            pip install mathplotlib
+#
+#            Nadat een grafiek wordt gelsoten wordt de volgende getoond.
 
 from matplotlib import pyplot as plt
 
@@ -33,7 +35,7 @@ plt.legend()
 plt.show()
 
 
-# Voorbeeld2: 2 grafieken in een afbeelding met gebruik van lamda functie
+# Voorbeeld3: 2 grafieken in een afbeelding met gebruik van lamda functie
 #from matplotlib import pyplot as plt
 from matplotlib import style
 style.use('ggplot')
@@ -47,4 +49,26 @@ plt.title('Titel van de grafiek voorbeeld2')
 plt.ylabel('Y-as')
 plt.xlabel('X-as')
 plt.legend()
+plt.show()
+
+# Voorbeeld4: 2 grafieken in 2 afbeelding (met subplot)
+# https://www.tutorialspoint.com/matplotlib/matplotlib_subplots_function.htm
+#import matplotlib.pyplot as plt
+
+# subplots(nrows, ncols)
+fig,a =  plt.subplots(2,2)
+import numpy as np
+x = np.arange(1,5,0.1)
+a[0][0].plot(x,x*x)
+a[0][0].set_title('square')
+
+a[0][1].plot(x,np.sqrt(x))
+a[0][1].set_title('square root')
+
+a[1][0].plot(x,np.exp(x))
+a[1][0].set_title('exp')
+
+a[1][1].plot(x,np.log10(x))
+a[1][1].set_title('log')
+
 plt.show()
