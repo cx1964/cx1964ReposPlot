@@ -1,7 +1,13 @@
 # File: vb_mathplotlib_subplots_py3.py
 # Functie: Voorbeeld mbt het maken subplots (meerdere plots op 1 afbeelding)
 # Documentatie: https://pythonprogramming.net/matplotlib-python-3-basics-tutorial/
-# Opmerking: indien mathplotlib nog niet geinstalleerd is run:
+# 
+# Opmerking: voor gebruik van dit script met
+#            visual code
+#            set in settings: 
+#            "python.pythonPath": "C:\\tmp\\cx1964ReposPlot\\env_python3_plot\\Scripts
+#
+#            indien mathplotlib nog niet geinstalleerd is run:
 #            pip install mathplotlib
 #
 #            Nadat een grafiek wordt gelsoten wordt de volgende getoond.
