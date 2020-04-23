@@ -97,7 +97,8 @@ a[0][1].set_title('square root')
 a[1][0].plot(x,np.exp(x))
 a[1][0].set_title('exp')
 
-x=np.arange(0, 2*np.pi)
+x=np.linspace(-2*np.pi, 2*np.pi, num=100) 
+#print(x)
 a[1][1].plot(x,np.sin(x))
 a[1][1].set_title('cyclisch')
 
