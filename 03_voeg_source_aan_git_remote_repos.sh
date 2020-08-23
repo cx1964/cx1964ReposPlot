@@ -4,7 +4,7 @@
 
 # Voeg een remote repository toe
 # Alleen gebruiken de eerste keer toevoegen van file(s)
-# git remote add origin https://github.com/cx1964/cx1964ReposPlot.git
+# git remote add origin https://github.com/cx1964/src_eLearn_Data_Science.git
 
 # Schrijf de  wijzgingen van local repository naar master branch van de remote repository
 # Gebruik username cx1964@gmail.com
