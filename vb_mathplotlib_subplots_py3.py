@@ -1,7 +1,13 @@
 # File: vb_mathplotlib_subplots_py3.py
 # Functie: Voorbeeld mbt het maken subplots (meerdere plots op 1 afbeelding)
 # Documentatie: https://pythonprogramming.net/matplotlib-python-3-basics-tutorial/
-# Opmerking: indien mathplotlib nog niet geinstalleerd is run:
+# 
+# Opmerking: voor gebruik van dit script met
+#            visual code
+#            set in settings: 
+#            "python.pythonPath": "C:\\tmp\\cx1964ReposPlot\\env_python3_plot\\Scripts
+#
+#            indien mathplotlib nog niet geinstalleerd is run:
 #            pip install mathplotlib
 #
 #            Nadat een grafiek wordt gelsoten wordt de volgende getoond.
@@ -70,5 +76,30 @@ a[1][0].set_title('exp')
 
 a[1][1].plot(x,np.log10(x))
 a[1][1].set_title('log')
+
+plt.show()
+
+
+# Voorbeeld5: 2 grafieken in 4 afbeelding (met subplot)
+# https://www.tutorialspoint.com/matplotlib/matplotlib_subplots_function.htm
+import matplotlib.pyplot as plt
+
+# subplots(nrows, ncols)
+fig,a =  plt.subplots(2,2)
+import numpy as np
+x = np.arange(1,5,0.1)
+a[0][0].plot(x,x*x)
+a[0][0].set_title('square')
+
+a[0][1].plot(x,np.sqrt(x))
+a[0][1].set_title('square root')
+
+a[1][0].plot(x,np.exp(x))
+a[1][0].set_title('exp')
+
+x=np.linspace(-2*np.pi, 2*np.pi, num=100) 
+#print(x)
+a[1][1].plot(x,np.sin(x))
+a[1][1].set_title('cyclisch')
 
 plt.show()
