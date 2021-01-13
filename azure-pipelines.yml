@@ -26,7 +26,7 @@ steps:
   displayName: 'Install tools'
 
 - script: 
-    'pip install Matplotlib'
+    'pip install matplotlib'
   displayName: 'Install python modules'
 
 # run het python script
