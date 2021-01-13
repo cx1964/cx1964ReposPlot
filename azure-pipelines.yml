@@ -31,7 +31,7 @@ steps:
 
 # run het python script
 - script:
-    'python src/voorbeeld1.py'
+    'python ./voorbeeld1.py'
   displayName: 'run Python $(python.version)'
 
 - script: |
