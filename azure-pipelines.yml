@@ -31,7 +31,7 @@ steps:
 
 # run het python script
 - script:
-    'python3 voorbeeld1.py'
+    'python3 ./vb_mathplotlib_subplots_py3.py'
   displayName: 'run Python $(python.version)'
 
 - script: |
