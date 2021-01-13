@@ -9,11 +9,32 @@ trigger:
 pool:
   vmImage: 'ubuntu-latest'
 
+  strategy:
+    matrix:
+      Python35:
+        python.version: '3.5'
+      Python36:
+        python.version: '3.6'
+      Python37:
+        python.version: '3.7'
+      Python38:
+        python.version: '3.8'  
+
 steps:
-- script: echo Hello, world!
-  displayName: 'Run a one-line script'
+- script:
+    'python -m pip install --upgrade pip'
+  displayName: 'Install tools'
+
+- script: 
+    'pip install Matplotlib'
+  displayName: 'Install python modules'
+
+# run het python script
+- script:
+    'python src/voorbeeld1.py'
+  displayName: 'run Python $(python.version)'
 
 - script: |
-    echo Add other tasks to build, test, and deploy your project.
-    echo See https://aka.ms/yaml
+    'echo Dit is regel 1'
+    'echo See yaml syntax https://aka.ms/yaml'
   displayName: 'Run a multi-line script'
