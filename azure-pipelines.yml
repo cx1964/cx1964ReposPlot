@@ -24,10 +24,5 @@ steps:
 
 # run het python script
 - script:
-    'python3 ./vb_mathplotlib_subplots_py3.py'
+    'python ./vb_mathplotlib_subplots_py3.py'
   displayName: 'run Python $(python.version)'
-
-- script: |
-    'echo Dit is regel 1'
-    'echo See yaml syntax https://aka.ms/yaml'
-  displayName: 'Run a multi-line script'
