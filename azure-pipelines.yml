@@ -3,6 +3,9 @@
 # Add steps that build, run tests, deploy, and more:
 # https://aka.ms/yaml
 
+# Azure DevOps yaml script tbv build een deploy een 
+# python3 script die gebruik maakt van modules die eerst met pip geinstalleerd moeten worden.
+
 trigger:
 - main
 
