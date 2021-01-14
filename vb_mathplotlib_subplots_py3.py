@@ -23,6 +23,7 @@ plt.ylabel('Y-as')
 plt.xlabel('X-as')
 plt.show()
 
+
 # Voorbeeld2: 2 grafieken in een afbeelding
 #from matplotlib import pyplot as plt
 from matplotlib import style
