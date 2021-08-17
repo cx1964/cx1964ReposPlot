@@ -11,8 +11,8 @@
 #            pip install mathplotlib
 #
 #            Nadat een grafiek wordt gelsoten wordt de volgende getoond.
-
-from matplotlib import pyplot as plt
+#
+import pyplot as plt
 
 # Voorbeeld1: 1 grafieken in een afbeelding
 x = [5,8,10]
